@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="MobileAppRedirect.widget.MobileAppRedirect" needsEntityContext="false" xmlns="http://www.mendix.com/widget/1.0/">
+    <name>MobileAppRedirect</name>
+    <description>The description of this widget.</description>
+
+    <icon />
+
+    <properties>
+        <property key="typeEnum" type="enumeration" defaultValue="mf">
+            <caption>Action</caption>
+            <category>Behaviour</category>
+            <description>Action to do when cordova is detected</description>
+            <enumerationValues>
+                <enumerationValue key="mf">Microflow</enumerationValue>
+                <enumerationValue key="form">Form</enumerationValue>
+            </enumerationValues>
+        </property>
+        <property key="formToOpen" type="form">
+        <caption>Form to Open</caption>
+        <category>Behaviour</category>
+        <description>Form to load.</description> 
+        </property>
+        <property key="mfToExecute" type="microflow" required="false" defaultValue="">
+            <caption>Microflow</caption>
+            <category>Behavior</category>
+            <description>The microflow to execute.</description>
+            <returnType type="Boolean" />
+        </property>
+    </properties>
+</widget>
+
